@@ -18,7 +18,7 @@ following example, Python considers these two lines as one line of code because
 there is still an open parenthesis at the end of the first line. 
 ```python
 root1 = (-b + math.sqrt(b**2 - 4 * a * c)
-            / (2 * a))
+         ) / (2 * a)
 ```
 
 ## Variables
