@@ -31,6 +31,7 @@ the Python Primer and Python Data Types topics.
  | Using a Jupyter Notebook | n/a | [intro_jupyter_notebooks.ipynb](intro_jupyter_notebooks.ipynb) |
 | Python Primer              | [getting_started_in_python.md](getting_started_in_python.md) | [getting_started_in_python.ipynb](getting_started_in_python.ipynb) |
 | Python Data Types          | [python_data_types.md](python_data_types.md) | [python_data_types.ipynb](python_data_types.ipynb)                 | 
+| `tkinter` and GUIs          | [GUIs/README.md](GUIs/README.md)                             | n/a                                                                |
 
 
 ## NumPy and Matplotlib
