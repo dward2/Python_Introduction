@@ -66,7 +66,7 @@ main_window()
 
 We will define the GUI within a function called `main_window`.  We first create
 the root window using the `tk.Tk()` constructor and assign it to a variable
-name.  This variable name can be used to refer to the wiindow widget.  To start 
+name.  This variable name can be used to refer to the window widget.  To start 
 and display the GUI, we call the `.mainloop` method of the root window.  A 
 blank window should be displayed.
 
@@ -520,7 +520,7 @@ options and configurations for many of the `tkinter` widgets.
 <https://docs.python.org/3/library/tkinter.ttk.html> - Official Python
 documentation on the `ttk` themed widgets.
 
-<https://www.kite.com/python/docs/tkinter> - A not-terribly user friendly
+<https://www.kite.com/python/docs/tkinter> - A not-terribly user-friendly
 reference guide for `tkinter`, but does seem to have good lists of all
 methods, arguments, and keywords for all the widgets.
 
