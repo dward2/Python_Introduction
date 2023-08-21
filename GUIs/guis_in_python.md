@@ -219,10 +219,9 @@ def main_window():
     root.title("PID Simulator")
     ...
 ```
-The sub-function is indented to indicate it belongs in the `main_window`
-scope.  
+The sub-function is now part of the `main_window` scope.
 
-Now, we connect this function to the button by using the `command` named
+Next, we connect this function to the button by using the `command` named
 parameter.
 ```python
     update_btn = ttk.Button(root, text="Update", command=update_cmd)
@@ -423,10 +422,10 @@ To change the color and other aspects of the appearance of a widget, you
 need to use ttk.Styles 
 (<https://docs.python.org/3/library/tkinter.ttk.html#ttk-styling>).
 
-The use of these styles allows us to easily change the appearance of many
+The use of these styles allows us to change the appearance of many
 widgets at once.  However, it is not a straightforward process.  If changing
 the colors of a widget is important, and you don't mind giving up a bit of 
-the more "modern" look, I would use the`tk` version of the widget instead,
+the more "modern" look, I would use the `tk` version of the widget instead,
 which has much easier access to changing colors.
 
 For example, the `ttk.Button` widget does not have any option to change the 
@@ -436,7 +435,7 @@ only changes the border color.
 
 The button class could be changed to the `tk.Button` class as follows:
 ```python
-update_btn = tk.Button(root, text="Update", command=update_cmd,
+    update_btn = tk.Button(root, text="Update", command=update_cmd,
                            background="blue", foreground="white")
 ```
 Now, the colors can be more easily changed using the `background` and 
@@ -445,7 +444,7 @@ Now, the colors can be more easily changed using the `background` and
 This change causes the button width to decrease relative to the `ttk.Button`.
 This can be fixed by modifying the `.grid` call to use the `sticky` named
 parameter to tell the widget size to expand to the "east" and "west" sides of
-the grid cell.  Now the button will go right up to the edges of the column.  
+the grid cell.  Now the button will go right up to the edges of the column. 
 But, it is nicer to have a little bit of a gap, so the `padx` named parameter
 is used to specify the number of pixels that should exist between the left and
 right edges of the cell and the widget.
